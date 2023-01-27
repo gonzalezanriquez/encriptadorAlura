@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <nav>
+                <img src="img/aluraLogo.svg" alt="Logo Alura" class="logoAlura">
+            </nav>
+        </header>
+
+
+        <main>
+            <section>
+                <textarea id="inputTexto" placeholder="Ingrese el texto aqui"></textarea>
+
+
+
+                <div class="alerta">
+                    <img class="" src="img/alerta.svg" alt="" />
+                    <p class="">Solo letras minúsculas y sin acentos</p>
+                </div>
+
+
+
+                <div class="btn">
+
+
+                    <button type="button" class="b-encriptador" id="btn-encriptar" onclick="Encriptar()">
+                        Encriptar
+                    </button>
+                    <button class="b-desencriptador" onclick="Desencriptar()">Desencriptar</button>
+                </div>
+
+            </section>
+
+
+            <aside>
+                <div class="rectangulo">
+                    <img class="" src="img/munieco.svg" id="imgMunieco" alt="" />
+
+
+                    <p id="texto" class="tituloSide">Ningún mensaje fue encontrado</h2>
+                    <p id="text" class="bajadaAside">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+                    <textarea id="texto2" name="name"></textarea>
+
+                    <button class="b-desencriptador" id="copiar" type="button" name="button"
+                        onclick="Copiar()">Copiar</button>
+                </div>
+
+
+    </div>
+    </aside>
+    </main>
+    </div>
+
+
+    <script src="js.js"></script>
+</body>
+
+</html>
